@@ -1,0 +1,366 @@
+* {
+	/* EL MARGIN Y EL PADDING DEL BODY SIEMPRE SE INICIALIZA EN 0 PARA QUE NO HAYA CONFUSIONES NI ERRORES QUE TAPEN OTROS ERRORES A LA  HORA DE IR MODIFICANDO LA WEB  */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+.header {
+
+	/* LLAMAMOS HEADER AL DIV QUE ESTA ANCLADO ARRIBA DE LA WEB , ESTE CONTENDRA  TODAS LAS CABECERAS (ICONO, BUSCADOR , VARIOS ICONOS) */
+
+	background-color: black;
+	width: 100vw;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+.header2 {
+
+	/* LLAMAMOS HEADER2 AL DIV QUE ESTA ANCLADO ARRIBA DE LA WEB PERO DEBAJO DEL HEADER PRINCIPAL , ESTE CONTENDRA  TODAS LAS CABECERAS (ICONO, BUSCADOR , VARIOS ICONOS) */
+
+	background-color: rgb(53, 53, 53);
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	align-items: center;
+
+}
+
+/* SE USA ALING ITEMS PARA PARA ALINEAR AL CENTRO TODOS LOS ELEMENTOS DEL DIV */
+
+
+.logoIcon {
+
+	/* LLAMAMOS LOGOICON A LA IMAGEN DE LOGO DE LA WEB, CON EL TAMAÑO EXACTO PARA QUE ENTRE EN EL DIV HEADER  */
+	width: 110px;
+	margin-left: 100px;
+}
+
+/* ------------------------------------------------------------------------ */
+/* EMPIEZA CODIGO PARA CREAR  EL NAVEGADOR MOVIL , HASTA FIN DE COMENTARIO ES UN CODIGO PARA ESO  */
+.container {
+	position: absolute;
+	left: 48%;
+	top: 5%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+input {
+	outline: none;
+	box-sizing: border-box;
+	height: 60px;
+	width: 0px;
+	/*padding: 0 20px;*/
+	padding-left: 0 20px;
+	padding-bottom: 0 20px;
+	padding-top: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid #ffffff;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: grey;
+}
+
+.btn {
+	position: absolute;
+	right: 3px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	background: #ffffff;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+	/*border: grey 2px solid;*/
+}
+
+.btn i {
+	font-size: 25px;
+	color: white;
+	line-height: 80px;
+	transition: all .7s ease;
+	/*border: grey 2px solid;*/
+}
+
+.container:hover input {
+	width: 350px;
+	height: 60px;
+	/*border: grey 2px solid;*/
+}
+
+.container:hover i {
+	transform: rotate(-360deg);
+}
+
+.btn:hover {
+	background: #ffffff;
+}
+
+.svg {
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin-right: 8px;
+	margin-left: 5px;
+	height: 30px;
+	padding-right: 5px;
+}
+
+/* FIN DEL CODIGO DE LA NAVBAR, A PARTIR DE AQUI SE PUEDE SEGUIR COLOCANDO CODIGO  */
+/* ------------------------------------------------------------------------ */
+.usuario,
+.cesta,
+.moneda {
+		/*width: 65px;*/
+		height: 50px; /* Modificado */
+		cursor: pointer;
+		margin-left: 20px;
+}
+
+.container1 {
+	
+	position: absolute;
+	left: 85%;
+	top: 5%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+ul {
+	list-style-type: none;
+	margin-right: 0px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	display: flex; /* Modificado */
+	transform: translate(700px);
+}
+
+li {
+	float: left;
+	margin-right: 50px; /* Modificado */
+	
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: #111;
+}
+
+/* AQUI EMPIEZA EL APARTADO DE ANUNCIOS  */
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	top: 50px;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+/* AQUI TERMINA EL APARTADO DEL ANUCIO  */
+.container5 {
+
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+}
+
+.grid5 {
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 50px;
+	margin-top: 50px;
+
+
+}
+
+.circle {
+
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-color: lightgray;
+	overflow: hidden;
+
+
+
+}
+
+.text5 {
+
+	
+	font-size: 50px;
+	margin-top: 80px;
+}
+
+.linea {
+	margin-top: 1%;
+	background-color: rgba(71, 71, 71, 0.829);
+	width: 80vw;
+	height: 2px;
+
+}
+
+#img {
+	width: 240px;
+
+}
+
+.circle img {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.3s ease-in-out;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+margin-top: 80px;
+	width: 100%;
+
+
+}
+
+#textosFoot {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#subrayadoFoot {
+	border-bottom: white 2px solid;
+	height: 25px;
+}
+
+#espacioF {
+	margin-right: 3%;
+	margin-left: 2%;
+	margin-top: 20px;
+	/*border: grey 2px solid;*/
+	height: 120px;
+}
+
+#apps {
+	height: 50px;
+}
+
+#apps2 {
+	height: 40px;
+}
+
+/* AQUI TERMINA EL FOOTER*/
+
+.image-name {
+
+	text-align: center;  /* Alineación central */
+	margin-top: 5px;     /* Espacio entre la imagen y el nombre */
+	font-size: large;
+	color: black;
+
+}
+.nombres{
+	
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 185px;
+	margin-top: 50px;
+	font-size: 60px;
+	
+
+}

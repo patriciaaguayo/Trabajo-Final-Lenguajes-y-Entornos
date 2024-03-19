@@ -1,0 +1,358 @@
+*{
+	/* EL MARGIN Y EL PADDING DEL BODY SIEMPRE SE INICIALIZA EN 0 PARA QUE NO HAYA CONFUSIONES NI ERRORES QUE TAPEN OTROS ERRORES A LA  HORA DE IR MODIFICANDO LA WEB  */
+	margin : 0 ;
+	padding : 0 ;
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, sans-serif ;
+	
+}
+
+
+.header {
+
+	/* LLAMAMOS HEADER AL DIV QUE ESTA ANCLADO ARRIBA DE LA WEB , ESTE CONTENDRA  TODAS LAS CABECERAS (ICONO, BUSCADOR , VARIOS ICONOS) */
+
+	background-color: black;
+	width: 100vw;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+.header2 {
+
+	/* LLAMAMOS HEADER2 AL DIV QUE ESTA ANCLADO ARRIBA DE LA WEB PERO DEBAJO DEL HEADER PRINCIPAL , ESTE CONTENDRA  TODAS LAS CABECERAS (ICONO, BUSCADOR , VARIOS ICONOS) */
+	
+	background-color: rgb(53, 53, 53);
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	align-items: center;
+
+}
+
+/* SE USA ALING ITEMS PARA PARA ALINEAR AL CENTRO TODOS LOS ELEMENTOS DEL DIV */
+
+
+.logoIcon {
+
+	/* LLAMAMOS LOGOICON A LA IMAGEN DE LOGO DE LA WEB, CON EL TAMAÑO EXACTO PARA QUE ENTRE EN EL DIV HEADER  */
+	width: 110px;
+	margin-left: 100px;
+}
+
+/* ------------------------------------------------------------------------ */
+/* EMPIEZA CODIGO PARA CREAR  EL NAVEGADOR MOVIL , HASTA FIN DE COMENTARIO ES UN CODIGO PARA ESO  */
+.container {
+	position: absolute;
+	left: 48%;
+	top: 5%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+input {
+	outline: none;
+	box-sizing: border-box;
+	height: 60px;
+	width: 0px;
+	padding: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid #ffffff;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: grey;
+}
+
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 60px;
+	height: 60px;
+	background: #ffffff;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn i {
+	font-size: 25px;
+	color: white;
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
+.container:hover input {
+	width: 350px;
+}
+
+.container:hover i {
+	transform: rotate(-360deg);
+}
+
+.btn:hover {
+	background: #ffffff;
+}
+
+.svg {
+	margin-top: 8px;
+}
+
+/* FIN DEL CODIGO DE LA NAVBAR, A PARTIR DE AQUI SE PUEDE SEGUIR COLOCANDO CODIGO  */
+/* ------------------------------------------------------------------------ */
+.usuario,
+.cesta,
+.moneda {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin-left:7px;
+
+}
+
+.container1 {
+	position: absolute;
+	left: 90%;
+	top: 5%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	
+	
+}
+/* ------------------------------------------------------------------------------------------- */
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  transform: translate(700px);
+	
+  }
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+	background-color: #111;
+  }
+
+   /* Hasta aqui el Header */
+
+   #contenedorRopa{
+    /* border: grey 2px solid; */
+    margin-right: 8%;
+    width: 50vw;
+   }
+
+  #estrellas{
+    height: 40px;
+  }
+
+  #comentarios{
+    margin-top: 8%;
+  }
+
+#valoracionT{
+    font-size: 20px;
+}
+
+#comentarios{
+    height: 100px;
+    /* border: rgb(209, 209, 209) 1px solid; */
+}
+
+  #contenedorValoracion{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    /* border: rgb(209, 209, 209) 1px solid; */
+  }
+
+  #contenedorComentario{
+    /* border: rgb(209, 209, 209) 1px solid; */
+    margin-top: 4%;
+  }
+
+   #contenedorRecomendaciones{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    margin-top: 15%;
+    border-bottom: rgb(209, 209, 209) 1px solid;
+   }
+
+   #contenedorFotosRopa{
+    /* border: rgb(209, 209, 209) 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   #colores{
+    /* border: rgb(209, 209, 209) 1px solid; */
+    margin-bottom: 5%;
+   }
+
+   #colorF{
+    height: 280px;
+   }
+
+   #detalleF{
+    height: 150px;
+   }
+
+   #detalles{
+    /* border: rgb(209, 209, 209) 1px solid; */
+    margin-bottom: 5%;
+   }
+
+    #foto{
+        border: rgb(209, 209, 209) 1px solid; 
+        margin-right: 5%;
+    }
+
+   #contenedorFotos{
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: rgb(209, 209, 209) 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .fotochica{
+    height: 8vh;
+    border: rgb(209, 209, 209) 1px solid;
+    margin-left: -10%;
+    margin-top: 10%;
+   }
+   #fotosR{
+    height: 20vh;
+   }
+
+   #fotos1{
+    border: rgb(209, 209, 209) 1px solid;
+    margin-bottom: 8%;
+   }
+
+   #fotos2{
+    border: rgb(209, 209, 209) 1px solid;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-bottom: 8%;
+   }
+
+   #fotos3{
+    border: rgb(209, 209, 209) 1px solid;
+    margin-bottom: 8%;
+   }
+
+   #recomendacionT{
+    font-size: 20px;
+    margin-bottom: 1%;
+   }
+
+   #contenedorPrincipal{
+    /* border: grey 2px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+   }
+   .button {
+    background-color: #000000; /* Color de fondo de la cápsula */
+    padding: 5px 20px; /* Espaciado interior: altura y anchura */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    display: inline-block; /* Hace que el elemento sea del ancho de su contenido */
+    border-radius: 999px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 110%;
+ margin-top: 60%;
+
+  }
+  .nombre{
+    margin-top: 15%;
+    font-size: 150%;
+  }
+  .precio{
+    margin-top: 10%;
+    font-size: 100%;
+  }
+
+   /* FOOTER */
+
+   footer {
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	position: fixed; /* Fija el footer en la parte inferior */
+	width: 100%;
+	bottom:0; /* Lo coloca en la parte inferior */
+  }
+
+  #textosFoot{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  }
+
+  #subrayadoFoot{
+	border-bottom: white 2px solid;
+	height: 25px;
+  }
+
+  #fotosF{
+	margin-top: 15%;
+  }
+
+  #apartadosF{
+	margin-top: 15%;
+  }
+
+
+  #fotosF2{
+	margin-top: 10%;
+  }
+
+
+  #espacioF{
+	margin-right: 3%;
+	margin-left: 2%;
+	margin-top: 20px;
+	/*border: grey 2px solid;*/
+	height: 120px;
+  }
+
+  #apps{
+	height: 50px;
+  }
+
+  #apps2{
+	height: 40px;
+  }
+
+  /* AQUI TERMINA EL FOOTER*/

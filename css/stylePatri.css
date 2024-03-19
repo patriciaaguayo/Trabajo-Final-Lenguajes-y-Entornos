@@ -1,0 +1,432 @@
+*{
+	/* EL MARGIN Y EL PADDING DEL BODY SIEMPRE SE INICIALIZA EN 0 PARA QUE NO HAYA CONFUSIONES NI ERRORES QUE TAPEN OTROS ERRORES A LA  HORA DE IR MODIFICANDO LA WEB  */
+	margin : 0 ;
+	padding : 0 ;
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, sans-serif ;
+	
+}
+
+
+.header {
+
+	/* LLAMAMOS HEADER AL DIV QUE ESTA ANCLADO ARRIBA DE LA WEB , ESTE CONTENDRA  TODAS LAS CABECERAS (ICONO, BUSCADOR , VARIOS ICONOS) */
+
+	background-color: black;
+	width: 100vw;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
+.header2 {
+
+	/* LLAMAMOS HEADER2 AL DIV QUE ESTA ANCLADO ARRIBA DE LA WEB PERO DEBAJO DEL HEADER PRINCIPAL , ESTE CONTENDRA  TODAS LAS CABECERAS (ICONO, BUSCADOR , VARIOS ICONOS) */
+	
+	background-color: rgb(53, 53, 53);
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	align-items: center;
+
+}
+
+/* SE USA ALING ITEMS PARA PARA ALINEAR AL CENTRO TODOS LOS ELEMENTOS DEL DIV */
+
+
+.logoIcon {
+
+	/* LLAMAMOS LOGOICON A LA IMAGEN DE LOGO DE LA WEB, CON EL TAMAÑO EXACTO PARA QUE ENTRE EN EL DIV HEADER  */
+	height: 100px;
+	margin-left: 100px;
+}
+
+/* ------------------------------------------------------------------------ */
+/* EMPIEZA CODIGO PARA CREAR  EL NAVEGADOR MOVIL , HASTA FIN DE COMENTARIO ES UN CODIGO PARA ESO  */
+.container {
+	position: absolute;
+	left: 48%;
+	top: 5%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+input { /* Modificado */
+	outline: none;
+	box-sizing: border-box;
+	height: 60px;
+	width: 0px;
+	/*padding: 0 20px;*/
+	padding-left: 0 20px;
+	padding-bottom: 0 20px;
+	padding-top: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid #ffffff;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: grey;
+}
+
+.btn { /* Modificado */
+	position: absolute;
+	right: 3px;
+	top: 10px;
+	width: 60px;
+	height: 60px;
+	background: #ffffff;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+	/*border: grey 2px solid;*/
+}
+
+.btn i { /* Modificado */
+	font-size: 25px;
+	color: white;
+	line-height: 80px;
+	transition: all .7s ease;
+	/*border: grey 2px solid;*/
+}
+
+.container:hover input { /* Modificado */
+	width: 350px;
+	height: 60px;
+	/*border: grey 2px solid;*/
+}
+
+.container:hover i {
+	transform: rotate(-360deg);
+}
+
+.btn:hover {
+	background: #ffffff;
+}
+
+.svg { /* Modificado */
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin-right: 8px;
+	margin-left: 5px;
+	height: 30px;
+	padding-right: 5px;
+}
+
+/* FIN DEL CODIGO DE LA NAVBAR, A PARTIR DE AQUI SE PUEDE SEGUIR COLOCANDO CODIGO  */
+/* ------------------------------------------------------------------------ */
+.usuario,
+.cesta,
+.moneda {
+	/*width: 65px;*/
+	height: 50px; /* Modificado */
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.container1 {
+	position: absolute;
+	left: 85%;
+	top: 5%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	
+	
+}
+/* ------------------------------------------------------------------------------------------- */
+
+ul {
+	list-style-type: none;
+	margin-right: 0px;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	display: flex; /* Modificado */
+	transform: translate(700px);
+  }
+
+  /* Modificado */
+  .header2 {
+    display: flex;
+    justify-content: center;
+}
+
+  li {
+	float: left;
+	margin-right: 50px; /* Modificado */
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+	background-color: #111;
+  }
+
+  /*Estilo para productos*/
+
+  #sudaderas{
+	border-bottom: rgb(164, 163, 163) 2px solid;
+	margin-left: 8%;
+	margin-right: 8%;
+  }
+
+  #sudaderast{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 1%;
+  }
+
+  #contenedorP{
+	/*border: rgb(164, 163, 163) 2px solid;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  }
+
+  #producto1{
+	/*border: rgb(218, 218, 218) 1px solid;*/
+	margin-right: 1%;
+	margin-left: 3%;
+  }
+
+  #producto2{
+	/*border: rgb(218, 218, 218) 1px solid;*/
+	margin-right: 1%;
+	margin-left: 1%;
+  }
+
+  #producto3{
+	/*border: rgb(218, 218, 218) 1px solid;*/
+	margin-right: 1%;
+	margin-left: 1%;
+  }
+
+  #producto4{
+	/*border: rgb(218, 218, 218) 1px solid;*/
+	margin-right: 1%;
+	margin-left: 1%;
+  }
+
+  #producto5{
+	/*border: rgb(218, 218, 218) 1px solid;*/
+	margin-right: 1%;
+	margin-left: 1%;
+  }
+
+  #foto1{
+	height: 280px;
+  }
+
+  #foto2{
+	height: 280px;
+  }
+
+  #foto3{
+	height: 280px;
+  }
+
+  #foto4{
+	height: 280px;
+  }
+
+  #foto5{
+	height: 280px;
+  }
+
+#filtroc{
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+#filtro{
+	height: 500px;
+}
+
+#textoProducto{
+	text-align: center;
+	margin-top: 15%;
+}
+
+#s1{
+	border: rgb(218, 218, 218) 1px solid;
+}
+
+#precio{
+	text-align: center;
+	color: grey;
+	margin-top: 8%;
+}
+
+#s2{
+	border: rgb(218, 218, 218) 1px solid;
+}
+
+#s3{
+	border: rgb(218, 218, 218) 1px solid;
+}
+
+#s4{
+	border: rgb(218, 218, 218) 1px solid;
+}
+
+#s5{
+	border: rgb(218, 218, 218) 1px solid;
+}
+
+#pie{
+	/*border: rgb(218, 218, 218) 1px solid;*/
+	height: 100px;
+}
+
+  /*Fin estilo para productos*/
+
+  /* FOOTER */
+
+  footer {
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	position: fixed; /* Fija el footer en la parte inferior */
+	width: 100%;
+	bottom:0; /* Lo coloca en la parte inferior */
+  }
+
+  #textosFoot{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  }
+
+  #subrayadoFoot{
+	border-bottom: white 2px solid;
+	height: 25px;
+  }
+
+  #fotosF{
+	margin-top: 15%;
+  }
+
+  #apartadosF{
+	margin-top: 15%;
+  }
+
+
+  #fotosF2{
+	margin-top: 10%;
+  }
+
+
+  #espacioF{
+	margin-right: 3%;
+	margin-left: 2%;
+	margin-top: 20px;
+	/*border: grey 2px solid;*/
+	height: 120px;
+  }
+
+  #apps{
+	height: 50px;
+  }
+
+  #apps2{
+	height: 40px;
+  }
+
+  /* AQUI TERMINA EL FOOTER*/
+
+  /* ESTILO PARA MIS PEDIDOS */
+
+  #pedidoContenedor{
+	/*border:grey 2px solid;*/
+	border-radius: 30px;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 7%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color:rgb(225, 225, 225);
+  }
+
+  #Tpedidos{
+	border-bottom: rgb(164, 163, 163) 2px solid;
+	margin-left: 12%;
+	margin-right: 15%;
+	margin-bottom: 3%;
+  }
+
+  #textoPedido{
+	margin-bottom: 8%;
+	margin-top: 5%;
+  }
+
+  #FechaEntrega{
+	margin-bottom: 8%;
+  }
+
+  #tituloPedidos{
+	font-size: 20px;
+	margin-left: 2%;
+	margin-bottom: 1%;
+  }
+
+  #fotoPedido{
+	height: 200px;
+  }
+
+  #contenedorFoto{
+	background-color:white;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	margin-right: 1%;
+	margin-left: 2%;
+	border-radius: 10px;
+	margin-top: 3%;
+  }
+
+  #contenedorDescripcion{
+	margin-left: 6%;
+	margin-right: 15%;
+	margin-bottom: 8%;
+	margin-top: 2%;
+  }
+
+  #contenedorDevolucion{
+	background-color:black;
+	border-radius: 20px;
+	width: 150px;
+	margin-bottom: 10%;
+	margin-right: 5%;
+  }
+
+  #devolucion{
+	color: white;
+	text-align: center;
+	padding: 5%;
+  }
+
+  #contenedorDetalles {
+	border-bottom: grey 1px solid;
+	width: 120px;
+	margin-bottom: 70%;
+	margin-left: 10%;
+  }
+
+  #detalles{
+	padding-left: 8%;
+  }
